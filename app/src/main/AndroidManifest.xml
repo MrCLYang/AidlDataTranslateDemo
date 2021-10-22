@@ -9,15 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AidlDataTranslateDemo">
-        <service
-            android:process=":remote"
-            android:name=".RemoteService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.lfkj.aidldatatranslatedemo.IRemoteService"/>
-            </intent-filter>
-        </service>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -26,6 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.lfkj.aidldatatranslatedemo.RemoteService">
+            <intent-filter>
+                <action android:name="com.lfkj.aidldatatranslatedemo"></action>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
