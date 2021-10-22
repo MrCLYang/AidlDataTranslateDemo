@@ -11,6 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
        //git 合并测试
-        System.out.println("分支V1.01，为合并分支测试");
+        System.out.println("分支V1.02，为合并分支测试");
     }
 }
